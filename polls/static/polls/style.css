@@ -1,0 +1,8 @@
+li a, a {
+    color: green;
+}
+
+body {
+    background: white url("/static/polls/images/background.png") no-repeat;
+    background-position: top 20px right 20px;
+}
