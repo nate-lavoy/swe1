@@ -8,6 +8,10 @@ from .models import Question, Choice
 
 
 # Create your views here.
+def homepage(request):
+    return render(request, "polls/homepage.html")
+
+
 class IndexView(generic.ListView):
     template_name = "polls/index.html"
     context_object_name = "latest_question_list"
@@ -32,10 +36,6 @@ class DetailView(generic.DetailView):
 class ResultsView(generic.DetailView):
     model = Question
     template_name = "polls/results.html"
-
-
-def homepage(request):
-    return render(request, "homepage.html")
 
 
 def vote(request, question_id):

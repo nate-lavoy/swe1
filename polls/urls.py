@@ -3,7 +3,6 @@ from . import views
 
 app_name = "polls"
 urlpatterns = [
-    path("", views.homepage, name="homepage"),
     # ex: /polls/
     path("", views.IndexView.as_view(), name="index"),
     # ex: /polls/5
