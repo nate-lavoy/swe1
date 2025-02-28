@@ -23,5 +23,6 @@ deploy:
   app: "mysite"
   env: "mysite-dev"
   bucket_name: "elasticbeanstalk-us-east-1-536697258874"
+  bucket_path: "mysite"
   on:
     branch: main
